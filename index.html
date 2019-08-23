@@ -4,6 +4,7 @@
     <link type="text/css" rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <title>SDL</title>
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="container">
@@ -70,6 +71,20 @@
                     modal.style.display = "none";
                 }
             };
+        </script>
+
+
+        <!-- Autocomplete -->
+        <form autocomplete="off" action="#">
+            <div class="autocomplete" style="width:300px;">
+                <input id="myInput" type="text" name="myCountry" placeholder="Country">
+            </div>
+            <input type="submit">
+        </form>
+
+        <script>
+            let field = document.getElementById("myInput");
+            autocomplete(field, countries);
         </script>
 
     </div>
